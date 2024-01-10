@@ -1,0 +1,170 @@
+// nav {
+//   border: 1px solid #07f807;
+//   #navbar {
+//     a {
+//       color: $peacock-blue;
+//       h1 {
+//         .blueDot {
+//           width: 3rem;
+//           height: 3rem;
+//           border-radius: 50%;
+//           background-color: $royalblue;
+//         }
+//       }
+//     }
+//     .navLinkCont {
+//       .nav-item {
+//         text-align: center;
+
+//         .nav-link {
+//           font-size: 1.6rem;
+//           font-weight: 700;
+//           color: $darkgrey;
+//           position: relative;
+
+//           &.active {
+//             color: $lightblue !important;
+//           }
+//           &:hover {
+//             &::after {
+//               content: "";
+//               width: 100%;
+//               height: 2px;
+//               background-color: $royalblue;
+//               position: absolute;
+//               bottom: -2px;
+//               left: 0;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .navBtnCont {
+//       #languageBtn {
+//         font-size: 1.8rem;
+//         font-weight: 400;
+//         padding: 1.25rem 1.75rem;
+//         border-radius: 3rem;
+//         border: none;
+//         outline: none;
+//         background-color: $royalblue;
+//         color: $desc;
+//         background-color: $lightgrey;
+//       }
+//       #loginBtn {
+//         font-size: 1.8rem;
+//         font-weight: 400;
+//         padding: 1.4rem 4.2rem;
+//         border-radius: 3rem;
+//         border: none;
+//         outline: none;
+//         background-color: $royalblue;
+//         color: $white;
+//       }
+//     }
+//   }
+// }
+nav {
+  position: relative;
+  z-index: 2;
+
+  #navbar {
+    h1 {
+      .blueDot {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: $royalblue;
+      }
+    }
+    .navLinkCont {
+      li {
+        padding: 0 1.5rem;
+        text-align: center;
+
+        a {
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: $darkgrey;
+          position: relative;
+
+          &.active {
+            color: $royalblue;
+          }
+          &:hover {
+            &::after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              background-color: $royalblue;
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    .navBtnCont {
+      #languageBtn {
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 1.25rem 1.75rem;
+        border-radius: 3rem;
+        border: none;
+        outline: none;
+        background-color: $royalblue;
+        color: $desc;
+        background-color: $lightgrey;
+        span {
+          color: $darkgrey;
+        }
+      }
+      #loginBtn {
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 1.4rem 4.2rem;
+        border-radius: 3rem;
+        border: none;
+        outline: none;
+        background-color: $royalblue;
+        color: $white;
+      }
+      #navMenu {
+        transition: all 0.4s ease-in-out;
+        display: none;
+        cursor: pointer;
+        span {
+          display: block;
+          width: 2.5rem;
+          height: 2px;
+          border-radius: 9999px;
+          background-color: $black;
+          transition: all 0.4s ease-in-out;
+
+          &:not(&:last-child) {
+            margin-bottom: 7px;
+          }
+        }
+        &.active {
+          transition-delay: 0.3s;
+          transform: rotate(45deg);
+
+          span {
+            &:nth-child(2) {
+              width: 0;
+            }
+            &:nth-child(1) {
+              transition-delay: 0.2s;
+              transform: translateY(9px);
+            }
+            &:nth-child(3) {
+              transition-delay: 0.2s;
+              transform: translateY(-9px) rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

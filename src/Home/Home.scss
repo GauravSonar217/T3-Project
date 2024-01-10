@@ -1,0 +1,316 @@
+// News letter style
+.newsletterSec {
+  padding: 8rem 1rem;
+  color: $white;
+
+  #newsletterCont {
+    padding: 6.4rem 7.2rem;
+    background-color: $peacock-blue;
+    border-radius: 3rem;
+    column-gap: 3rem;
+
+    .newsTextCont {
+      h2 {
+        font-size: 4rem;
+        font-weight: 400;
+        font-family: $DM-Text;
+      }
+      p {
+        margin-bottom: 5rem;
+      }
+      .inputBoxCont {
+        input {
+          width: 32rem;
+          border-radius: 0.8rem;
+          outline: none;
+          padding: 1rem 1.4rem;
+        }
+        .subscribeBtn {
+          color: $white;
+          border-radius: 0.8rem;
+          padding: 1rem 1.8rem;
+          border: none;
+          outline: none;
+          background-color: $lightgreen;
+          font-size: 1.6rem;
+          font-weight: 600;
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+      }
+    }
+  }
+}
+
+// Slider Sec
+
+.sliderSec {
+  .sliderCont {
+    padding: 0;
+    h2 {
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: $DM-Text;
+      color: $dark-green;
+    }
+    p {
+      width: 80%;
+      color: $darkgrey;
+      margin-bottom: 8rem;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-left: 3rem;
+      padding-right: 3rem;
+
+      .swiper-button-next {
+        width: 3rem !important;
+        height: 3rem !important;
+        border-radius: 50%;
+        padding: 2.5rem;
+        top: 40%;
+        right: -1px;
+        color: $black !important;
+        background-color: $grey;
+
+        &::after {
+          font-size: 1.5rem;
+        }
+      }
+      .swiper-button-prev {
+        width: 3rem !important;
+        height: 3rem !important;
+        border-radius: 50%;
+        padding: 2.5rem;
+        top: 40%;
+        left: -1px;
+        color: $black !important;
+        background-color: $grey;
+
+        &::after {
+          font-size: 1.5rem;
+        }
+      }
+      .swiper-slide {
+        text-align: left;
+        @include flexrow;
+        flex-direction: column;
+        align-items: start;
+        .slideImgCont {
+          width: 100%;
+          img {
+            border-radius: 3rem;
+          }
+        }
+        .sliderTextCont {
+          h4 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $dark-green !important;
+          }
+          p {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// offer card style
+
+.cardSec {
+  align-items: start;
+  flex-wrap: wrap;
+  .offerCard {
+    position: relative;
+    width: 55rem;
+    background-color: $white;
+    border-radius: 3rem;
+    padding: 8rem 3.5rem;
+    padding-bottom: 4rem;
+    #close {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+    .logoBox {
+      width: 20rem;
+      height: 5rem;
+      background-color: $lightblue;
+      // margin-top: 6rem;
+      margin-bottom: 5rem;
+    }
+    h4 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $dark-green;
+    }
+    p {
+      color: $darkgrey;
+      margin-bottom: 3rem;
+    }
+    button {
+      border: none;
+      border-radius: 0.8rem;
+      padding: 1rem 1.8rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    #continueBtn {
+      background: $blue-gradient;
+      color: $white;
+    }
+    #cancelBtn {
+      background-color: transparent;
+    }
+  }
+  .eventPopUp {
+    width: 32rem;
+    border-radius: 1.5rem;
+    background-color: $white;
+    position: relative;
+    img {
+      top: 1rem;
+      right: 2rem;
+    }
+    .profile {
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+    .eventTextBox {
+      h5 {
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      h4 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.blogSec {
+  h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: $DM-Text;
+    color: $dark-green;
+    margin-bottom: 6rem;
+  }
+  .blogCont {
+    margin-bottom: 5rem !important;
+    .card {
+      background-color: $white;
+      border-radius: 3rem;
+      p {
+        &:nth-child(1) {
+          font-size: 1.4rem;
+        }
+      }
+      img {
+        width: 100%;
+        border-radius: 3rem;
+      }
+      h5 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $dark-green;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  #viewmore {
+    padding: 1.8rem 6rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: $blue-gradient;
+    border: none;
+  }
+}
+
+.headerSliderSec {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  .carousel {
+    border: 1px solid red;
+    .carousel-inner {
+      .carousel-item {
+        height: calc(85vh - 7rem);
+        border: 1px solid blue;
+        img {
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5rem;
+        }
+        .slideTextBox {
+          border: 1px solid red;
+          color: $white;
+          position: absolute;
+          top: 20rem;
+          left: 50%;
+          transform: translateX(-50%);
+
+          h2 {
+            font-size: 4.8rem;
+            font-family: $DM-Text;
+          }
+          p {
+            color: $white;
+          }
+        }
+        .sliderBar {
+          border: 1px solid red;
+          color: $white;
+          position: absolute;
+          bottom: 15rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    .carousel-control-prev {
+      span {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    .carousel-control-next {
+      span {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    .carousel-indicators {
+      bottom: 4rem;
+      button {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background-color: $grey;
+        margin-left: 1rem;
+        border: none;
+
+        &.active {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
