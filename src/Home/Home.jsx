@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion, useScroll } from "framer-motion";
 import newsletter from "../assets/png/newsletter.png";
@@ -19,19 +19,45 @@ import blog2 from "../assets/jpg/blog2.jpg";
 import slide1 from "../assets/jpg/slide1.jpg";
 import slide2 from "../assets/jpg/slide2.jpg";
 import search from "../assets/svg/search.svg";
+import apple from "../assets/svg/apple.svg";
+import googlelogo from "../assets/svg/google.svg";
+import instalogo from "../assets/svg/instalogo.svg";
+import fea1 from "../assets/png/fea1.png";
+import fea2 from "../assets/png/fea2.png";
+import fea3 from "../assets/png/fea3.png";
+import fea4 from "../assets/png/fea4.png";
+import fea5 from "../assets/png/fea5.png";
+import fea6 from "../assets/png/fea6.png";
+import firstSlide from "../assets/jpg/first.jpg";
+import close from "../assets/svg/close.svg";
+import event1 from "../assets/jpg/event1.jpg";
+import star from "../assets/svg/rating.svg";
+import Nav from "../layout/Nav/Nav";
+import Footer from "../layout/Footer/Footer";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
+import "swiper/css/grid";
 import "swiper/css/navigation";
+import "swiper/css";
+import "swiper/css/grid";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Grid } from "swiper/modules";
 import Card from "../component/Card";
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [swiperRef, setSwiperRef] = useState(null);
+
+  function showForm() {
+    setIsLoggedIn(!isLoggedIn);
+    console.log(isLoggedIn);
+  }
 
   return (
     <React.Fragment>
+      <Nav />
       <section className="newsletterSec w-100 ">
         <div
           className="container d-flex justify-content-between align-items-center "
@@ -68,6 +94,303 @@ function Home() {
               </button>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="loginSec w-100 border border-2 border-warning d-flex ">
+        <div className="loginFormCont col-lg-5 border border-1 border-danger d-flex flex-column justify-content-start align-items-center text-center ">
+          <div className="formTextContainer border border-1 border-danger">
+            <h1>
+              Start your <br />
+              perfect trip with T3
+            </h1>
+            <div className="formContainer border border-1 border-danger d-flex flex-column align-items-center  w-100">
+              <label className="switchCont d-flex justify-content-between align-items-center ">
+                <p>Log In</p>
+                <label class="switch">
+                  <input onClick={showForm} type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+                <p>Sign-Up</p>
+              </label>
+              {isLoggedIn ? (
+                <form className="w-100 d-flex flex-column">
+                  <input placeholder="Full Name" type="text" />
+                  <input name="email" placeholder="Email" type="email" />
+                  <input
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                  />
+                  <button>Sign Up</button>
+                </form>
+              ) : (
+                <form className="w-100 d-flex flex-column ">
+                  <input
+                    name="email"
+                    placeholder="Enter User ID"
+                    type="email"
+                  />
+                  <input
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                  />
+                  <button>Log In</button>
+                </form>
+              )}
+            </div>
+            <p>
+              already have an account?
+              <HashLink className="ml-2">Login</HashLink>
+            </p>
+            <h3 className="my-5 ">or</h3>
+            <div className="socialIconCont border border-danger d-flex justify-content-center  ">
+              <HashLink className="mr-4 d-flex">
+                <img src={instalogo} alt="instagram logo" />
+              </HashLink>
+              <HashLink className="mr-4">
+                <img src={googlelogo} alt="google logo" />
+              </HashLink>
+              <HashLink className="">
+                <img src={apple} alt="apple logo" />
+              </HashLink>
+            </div>
+          </div>
+        </div>
+        <div className="loginSliderCont col-lg-7 border border-1 border-danger p-0 ">
+          <button className="skipBtn border-0 position-absolute ">
+            Skip <img src={close} alt="cross icon" className="ml-3" />
+          </button>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-interval="3000"
+          >
+            <div class="carousel-inner border border-warning">
+              <div class="carousel-item active" data-interval="2000">
+                <img src={firstSlide} className="w-100" />
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src={firstSlide} className="w-100" />
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src={firstSlide} className="w-100" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="eventSliderSec sectionPadding w-100 border border-2 border-warning">
+        <div className="container eventSliderCont text-center d-flex flex-column align-items-center">
+          <h2 className="text-center mb-4">
+            Find Upcoming events and camps From Social
+          </h2>
+          <p className="text-center col-10 ">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took
+          </p>
+          <button className="eventBtn border-0">Check all Events</button>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={20}
+            grid={{
+              rows: 2,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Grid, Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0 ">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8  text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0 ">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0 ">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0 ">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0 ">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0 ">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="d-flex align-items-start">
+              <div className="imgBox col-5 p-0 ">
+                <img src={event1} alt="event pic" className="w-100" />
+              </div>
+              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+                <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
+                <img src={star} alt="rating" />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="d-flex justify-content-between col-12 p-0 ">
+                  <button className="">Check details</button>
+                  <h2>$ 100</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            {/* <SwiperSlide>Slide 2</SwiperSlide>
+            <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>Slide 5</SwiperSlide>
+            <SwiperSlide>Slide 6</SwiperSlide>
+            <SwiperSlide>Slide 7</SwiperSlide>
+            <SwiperSlide>Slide 8</SwiperSlide>
+            <SwiperSlide>Slide 9</SwiperSlide> */}
+          </Swiper>
         </div>
       </section>
 
@@ -210,7 +533,7 @@ function Home() {
               Yes, please inform me about trek, tour, travel deals, tips and new
               features on trektourtravel.com I can opt out at any time
             </p>
-            <button className="w-100 text-center mb-4  " id="continueBtn">
+            <button className="w-100 text-center mb-4" id="continueBtn">
               Continue
             </button>
             <button className="w-100 text-center " id="cancelBtn">
@@ -359,6 +682,81 @@ function Home() {
           </a> */}
         </div>
       </section>
+      <section className="feartureSec w-100 border border-2 border-warning">
+        <div className="container feartureCont d-flex">
+          <div className="featureTextCont col-lg-5 col-md-12">
+            <h2 className="mb-lg-3">Features</h2>
+            <p className="">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            {/* <button>More Features</button> */}
+            <button type="button" class="btn btn-outline-light">
+              More Features
+            </button>
+          </div>
+          <div className="featureBoxCont col-lg-7 col-md-12 p-0">
+            <div className="featureBox">
+              <img src={fea1} alt="" className="mb-4" />
+              <h3 className="mb-3">Lorem Ipsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+              </p>
+            </div>
+            <div className="featureBox">
+              <img src={fea2} alt="" className="mb-4" />
+              <h3 className="mb-3">Lorem Ipsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+              </p>
+            </div>
+            <div className="featureBox">
+              <img src={fea3} alt="" className="mb-4" />
+              <h3 className="mb-3">Lorem Ipsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+              </p>
+            </div>
+            <div className="featureBox">
+              <img src={fea4} alt="" className="mb-4" />
+              <h3 className="mb-3">Lorem Ipsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+              </p>
+            </div>
+            <div className="featureBox">
+              <img src={fea5} alt="" className="mb-4" />
+              <h3 className="mb-3">Lorem Ipsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+              </p>
+            </div>
+            <div className="featureBox">
+              <img src={fea6} alt="" className="mb-4" />
+              <h3 className="mb-3">Lorem Ipsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+
     </React.Fragment>
   );
 }

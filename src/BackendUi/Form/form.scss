@@ -1,0 +1,115 @@
+.formSec {
+  background-color: $mid-grey;
+
+  input {
+    border: 1px solid $darkgrey !important;
+  }
+  textarea {
+    border: 1px solid $darkgrey !important;
+    outline: none !important;
+  }
+  .green {
+    border: 1px solid #06d206 !important;
+  }
+  .yellow {
+    border: 1px solid #f6c607 !important;
+  }
+  .red {
+    border: 1px solid red !important;
+  }
+  .paddingZero {
+    @include extraSmallDevice {
+      padding: 1rem 0 !important;
+    }
+  }
+  .attractionBox {
+    @include extraSmallDevice {
+      padding: 1rem 0 !important;
+    }
+  }
+  .insigthBox {
+    @include extraSmallDevice {
+      padding: 1rem 0 !important;
+    }
+  }
+}
+.inputFileCont {
+  width: 100%;
+  input {
+    background-color: $white;
+  }
+}
+select {
+  outline: none;
+  background-color: $white;
+}
+.disable {
+  visibility: hidden;
+}
+
+.myCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  color: $black;
+  font-size: 3.2rem !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+  @include extraSmallDevice {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+}
+
+h3 {
+  color: $black;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  @include extraSmallDevice {
+    font-size: 1.3rem;
+  }
+}
+h4 {
+  color: $border;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $mid-black;
+}
+
+.counter {
+  cursor: pointer;
+  background-color: $white;
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: $black;
+    margin: 0;
+    padding: 0.6rem;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: $black;
+    margin: 0;
+    padding: 0.6rem;
+  }
+}
+.file {
+  background-color: $white;
+}
+.boxBorder {
+  border: 1px solid $border;
+}

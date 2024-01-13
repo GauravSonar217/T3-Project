@@ -20,11 +20,10 @@ body {
 }
 
 .container {
-  max-width: 1499px;
+  max-width: 1440px;
   margin: 0 auto !important;
   width: 100%;
-  border: 1px solid red;
-  padding: 0 1.5rem;
+  padding: 0 1.6rem;
 }
 .innerCont {
   max-width: 1280px;
@@ -54,6 +53,12 @@ ul {
   padding: 0;
 }
 
+h2{
+  font-size: 4rem;
+  font-family: $DM-Text;
+  color: $dark-green;
+}
+
 a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -61,6 +66,11 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $black;
 }
 
 p {
