@@ -1,4 +1,85 @@
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1280.98px) {
+  // event slider style
+
+  .eventSliderSec {
+    .eventSliderCont {
+      .swiper {
+        height: 50vh;
+        .swiper-wrapper {
+          height: 22%;
+
+          .swiper-slide {
+            padding: 1rem 1.5rem;
+
+            .textBox {
+              padding: 0;
+
+              h5 {
+                font-size: 1.5rem;
+              }
+              img {
+                height: 1.4rem;
+                margin-bottom: 0.5rem;
+              }
+              p {
+                font-size: 1.2rem;
+                margin: 0;
+                margin-bottom: 1rem;
+              }
+              button {
+                font-size: 1.25rem;
+                padding: 0.5rem 1rem;
+              }
+              h2 {
+                font-size: 2.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 767.98px) and (max-width: 991px) {
+  // event slider style
+
+  .eventSliderSec {
+    .eventSliderCont {
+      .swiper {
+        height: 36vh;
+        .swiper-wrapper {
+          height: 22%;
+
+          .swiper-slide {
+            .textBox {
+              padding: 0;
+
+              h5 {
+                font-size: 1.5rem;
+              }
+              img {
+                height: 1.4rem;
+                margin-bottom: 0.5rem;
+              }
+              p {
+                font-size: 1.2rem;
+                margin: 0;
+                margin-bottom: 1rem;
+              }
+              button {
+                font-size: 1.25rem;
+                padding: 0.5rem 1rem;
+              }
+              h2 {
+                font-size: 2.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   // featureSec style
   .feartureSec {
     padding: 8rem 0;
@@ -172,8 +253,99 @@
     }
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .eventSliderSec {
+    .eventSliderCont {
+      .swiper {
+        height: 42vh;
+        .swiper-wrapper {
+          height: 22%;
+
+          .swiper-slide {
+            height: 20%;
+            .imgBox {
+              width: 40%;
+              height: 95%;
+              img {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 576px) {
+  // event slider style
+
+  .eventSliderSec {
+    .eventSliderCont {
+      padding: 0 2rem;
+      h2 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+      }
+      .eventBtn {
+        padding: 1.1rem 1.5rem;
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+      }
+      .swiper {
+        height: 43vh;
+
+        .swiper-wrapper {
+          height: 21.5%;
+
+          .swiper-slide {
+            padding: 1rem;
+
+            .textBox {
+              padding: 0;
+
+              h5 {
+                font-size: 1.2rem;
+              }
+              img {
+                height: 1.2rem;
+                margin-bottom: 0.3rem;
+              }
+              p {
+                font-size: 1.09rem;
+                margin: 0;
+                margin-bottom: 0rem;
+                line-height: 1.4rem;
+              }
+              button {
+                font-size: 1rem;
+                padding: 0rem 1rem !important;
+
+                &.checkBtn {
+                  height: 3rem;
+                  padding: 0 1rem !important;
+                }
+              }
+              h2 {
+                font-size: 1.8rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        .swiper-scrollbar {
+          .swiper-scrollbar-drag {
+            width: 6.5rem !important;
+            height: 0.65rem;
+            top: 0.1rem;
+          }
+        }
+      }
+    }
+  }
   // featureSec style
   .feartureSec {
     padding: 6rem 0;
@@ -513,6 +685,78 @@
   }
   .copyCont .socialCont {
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  // event slider style
+
+  .eventSliderSec {
+    .eventSliderCont {
+      padding: 0 2rem;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+      }
+      .eventBtn {
+        padding: 1.1rem 1.5rem;
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+      }
+      .swiper {
+        height: 58vh;
+
+        .swiper-wrapper {
+          height: 20.5%;
+
+          .swiper-slide {
+            padding: 1rem;
+            column-gap: 2rem;
+
+            .textBox {
+              padding: 0;
+
+              h5 {
+                font-size: 1.05rem;
+                margin: 0;
+              }
+              img {
+                height: 0.9rem;
+                margin-bottom: 0.3rem;
+              }
+              p {
+                font-size: 0.9rem;
+                margin: 0;
+                margin-bottom: 0rem;
+                line-height: 1.2rem;
+              }
+              button {
+                font-size: 0.9rem;
+                padding: 0rem 0.5rem !important;
+
+                &.checkBtn {
+                  height: 2.5rem;
+                  padding: 0 1rem !important;
+                }
+              }
+              h2 {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+        .swiper-scrollbar {
+          .swiper-scrollbar-drag {
+            width: 6rem !important;
+            height: 0.5rem;
+            top: 0.2rem;
+          }
+        }
+      }
+    }
   }
 }
 

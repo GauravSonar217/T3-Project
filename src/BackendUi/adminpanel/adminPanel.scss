@@ -1,0 +1,435 @@
+.adminSec {
+  padding: 5rem 6rem;
+  h2 {
+    font-family: $Roboto !important;
+  }
+  h6 {
+    font-family: $Roboto !important;
+  }
+  p {
+    font-family: $Roboto !important;
+  }
+  nav {
+    margin-bottom: 6rem;
+    .logoBox {
+      cursor: pointer;
+      img {
+        border-radius: 100px;
+      }
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $darkgrey;
+      }
+    }
+    .admiNavLinkCont {
+      a {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $darkgrey;
+        &.active {
+          color: $purple;
+        }
+      }
+    }
+    .adminSearchBox {
+      width: 30rem;
+      border-radius: 3rem;
+      padding: 0.5rem 2rem;
+      background-color: $white;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+      input {
+        border-radius: 3rem;
+        outline: none;
+        font-size: 1.6rem;
+        padding-left: 3rem;
+        &::placeholder {
+          font-size: 1.4rem;
+        }
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+    .iconsCont {
+      a {
+        border-radius: 50%;
+        padding: 1.5rem;
+      }
+    }
+  }
+  .adminPanelWrapper {
+    column-gap: 7rem;
+    aside {
+      border-radius: 2rem;
+      width: 25%;
+
+      .dropDownCont {
+        border-radius: 2rem;
+        .dropDownBox {
+          padding: 0 2rem;
+          border-radius: 1rem;
+          background-color: $white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+          select {
+            width: 100%;
+            border-radius: 1rem;
+            font-size: 1.3rem;
+            font-weight: 900;
+            background-color: transparent;
+            border: none;
+            color: $darkgrey;
+            cursor: pointer;
+          }
+          &:nth-of-type(1) {
+            background-color: $purple;
+            box-shadow: none;
+            select {
+              color: $white;
+              &::before {
+                content: "";
+                color: $grey;
+              }
+            }
+          }
+          &:nth-of-type(2) {
+            select {
+              color: $orange;
+            }
+          }
+        }
+      }
+      .projectCont {
+        border-radius: 2rem;
+        .deadlineCont {
+          background-color: $white;
+          border-radius: 2rem;
+          padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+          h6 {
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+          .projectBar {
+            border-radius: 1rem;
+            background: rgba(255, 102, 51, 0.05);
+            h6 {
+              color: $orange;
+            }
+          }
+        }
+        .menuBoxCont {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          .menuBox {
+            border-radius: 1rem;
+            background-color: $white;
+            padding: 2.5rem 1rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+            .numBox {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background-color: $lightgreen;
+              padding: 2.5rem;
+              color: $white;
+              font-size: 1.2rem;
+              font-weight: 900;
+            }
+            h6 {
+              font-size: 1.2rem;
+              font-weight: 700;
+            }
+            &:nth-child(2) {
+              .numBox {
+                background-color: $purple;
+              }
+            }
+            &:nth-child(3) {
+              .numBox {
+                background-color: $lightRoyal;
+              }
+            }
+            &:nth-child(4) {
+              .numBox {
+                background-color: $orange;
+              }
+            }
+          }
+        }
+        .updateBoxCont {
+          border-radius: 1rem;
+          padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+          background-color: $white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+          .updateHeader {
+            h6 {
+              font-size: 1.2rem;
+              font-weight: 700;
+            }
+          }
+          .updateBox {
+            padding: 2rem;
+            border-radius: 1rem;
+            background: #f7f8fa;
+            h6 {
+              font-size: 1.2rem;
+              font-weight: 700;
+              &:nth-child(2) {
+                font-size: 2rem;
+                font-weight: 800;
+              }
+            }
+            &:nth-child(5) {
+              background: rgba(224, 0, 0, 0.1);
+              h6 {
+                &:nth-child(2) {
+                  color: $orange;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .adminDashboardWrapper {
+      .dashboardHeader {
+        margin-bottom: 5rem;
+        h4 {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+        p {
+          font-size: 1.3rem;
+          font-weight: 700;
+        }
+        ul {
+          border-radius: 3rem;
+          background-color: $white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          a {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: $darkgrey;
+            &.active {
+              color: $purple;
+            }
+          }
+        }
+      }
+      .dashboardCont {
+        column-gap: 3rem;
+        .dataCont {
+          .dashboardMenu {
+            ul {
+              width: 100%;
+              padding: 6rem 9rem;
+              border-radius: 1rem;
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+              li {
+                margin: 0 3rem;
+                cursor: pointer;
+                h6 {
+                  font-size: 1.3rem;
+                  font-weight: 700;
+                }
+              }
+            }
+            .dashboardDataCont {
+              column-gap: 5rem;
+              .projectCountCont {
+                width: 25%;
+                .projectCountBox {
+                  width: 100%;
+                  border-radius: 1rem;
+                  padding: 4.2rem;
+                  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                  h2 {
+                    font-size: 3rem;
+                    font-weight: 500;
+                    color: $darkgrey;
+                    text-decoration: none;
+                  }
+                  h6 {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: $grey2;
+                  }
+                }
+              }
+              .dashboardFeatureCont {
+                width: 70%;
+                border-radius: 1rem;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                .featureHeader {
+                  h6 {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                  }
+                }
+                .featureBoxCont {
+                  .featureBox {
+                    .featureIconCont {
+                      padding: 1rem;
+                      border-radius: 50%;
+                      &:nth-of-type(1) {
+                        background: rgba(41, 204, 57, 0.05);
+                      }
+                    }
+                    .featureTextCont {
+                      h6 {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        line-height: 2.5rem;
+                        &:nth-child(1) {
+                          color: $grey2;
+                        }
+                      }
+                    }
+                    .updateBtn {
+                      padding: 0.8rem 2rem;
+                      border-radius: 1.5rem;
+                      border: none;
+                      font-size: 1.1rem;
+                      font-weight: 900;
+                      color: $grey2;
+                      background-color: $lightgrey;
+                    }
+                    &:nth-child(2) {
+                      .featureIconCont {
+                        background: rgba(51, 97, 255, 0.05);
+                      }
+                    }
+                    &:nth-child(3) {
+                      .featureIconCont {
+                        background: rgba(255, 102, 51, 0.05);
+                      }
+                    }
+                    &:nth-child(4) {
+                      .featureIconCont {
+                        background: rgba(136, 51, 255, 0.05);
+                      }
+                    }
+                    &:nth-child(5) {
+                      .featureIconCont {
+                        background: rgba(51, 191, 255, 0.05);
+                      }
+                    }
+                    &:nth-child(6) {
+                      .featureIconCont {
+                        background: rgba(230, 46, 123, 0.05);
+                      }
+                    }
+                    &:nth-child(7) {
+                      .featureIconCont {
+                        background: rgba(51, 97, 255, 0.05);
+                      }
+                    }
+                  }
+                  .showmoreBtn {
+                    width: 90%;
+                    padding: 1.5rem;
+                    border-radius: 2rem;
+                    background: rgba(51, 97, 255, 0.05);
+                    color: $lightRoyal;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+            .financialsCont {
+              .financialChartCont {
+                border-radius: 1rem;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                .financialHeader {
+                  h6 {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                  }
+                }
+              }
+              .financialDetailCont {
+                .financialBox {
+                  border-radius: 1rem;
+                  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                  .financialBoxHeader {
+                    h6 {
+                      font-size: 1.4rem;
+                      color: $mid-black;
+                    }
+                  }
+                  h1 {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: $lightRoyal;
+                  }
+                  h6 {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    color: $lightgreen;
+                  }
+                  &:nth-child(2) {
+                    .financialBoxHeader {
+                      h6 {
+                        color: $mid-black;
+                      }
+                    }
+                    h1 {
+                      color: $lightgreen;
+                    }
+                    h6 {
+                      color: red;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .dashboardFeedbackCont {
+          border-radius: 1rem;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+          .feedbackHeader {
+            h6 {
+              font-size: 1.3rem;
+              font-weight: 700;
+              position: relative;
+              color: $darkgrey;
+              cursor: pointer;
+
+              &.active {
+                color: $orange;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  bottom: -1px;
+                  width: 85%;
+                  height: 2px;
+                  background-color: $orange;
+                  transform: translateX(-50%);
+                }
+              }
+            }
+          }
+          .reviewBox {
+            height: 22%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            &:last-child {
+              border-bottom-left-radius: 1rem;
+              border-bottom-right-radius: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

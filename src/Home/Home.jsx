@@ -34,6 +34,8 @@ import event1 from "../assets/jpg/event1.jpg";
 import star from "../assets/svg/rating.svg";
 import Nav from "../layout/Nav/Nav";
 import Footer from "../layout/Footer/Footer";
+import dashedline from "../assets/svg/dashedline.svg";
+import questiontag from "../assets/svg/questionmark.svg";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/grid";
@@ -43,6 +45,8 @@ import "swiper/css/grid";
 
 // import required modules
 import { Pagination, Navigation, Grid } from "swiper/modules";
+// import required modules
+import { Scrollbar } from "swiper/modules";
 import Card from "../component/Card";
 import { HashLink } from "react-router-hash-link";
 
@@ -206,7 +210,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="eventSliderSec sectionPadding w-100 border border-2 border-warning">
+      <section className="eventSliderSec bg-dark  sectionPadding w-100">
         <div className="container eventSliderCont text-center d-flex flex-column align-items-center">
           <h2 className="text-center mb-4">
             Find Upcoming events and camps From Social
@@ -223,174 +227,257 @@ function Home() {
             grid={{
               rows: 2,
             }}
-            pagination={{
-              clickable: true,
+            scrollbar={{
+              show: true,
             }}
-            modules={[Grid, Pagination]}
+            breakpoints={{
+              2500: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1920: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              576: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+            }}
+            modules={[Grid, Pagination, Scrollbar]}
             className="mySwiper"
           >
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0 ">
+              <div className="imgBox p-0 ">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center  w-100 p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0">
-                <img src={event1} alt="event pic" className="w-100" />
+              <div className="imgBox p-0">
+                <img src={event1} alt="event pic" className="" />
               </div>
-              <div className="textBox col-8  text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox  text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100  p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0 ">
+              <div className="imgBox p-0 ">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100 p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0">
+              <div className="imgBox p-0">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100 p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0 ">
+              <div className="imgBox p-0 ">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100 p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0 ">
+              <div className="imgBox p-0 ">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100 p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0 ">
+              <div className="imgBox p-0 ">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100 p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0 ">
+              <div className="imgBox p-0 ">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100 p-0 ">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide className="d-flex align-items-start">
-              <div className="imgBox col-5 p-0 ">
+              <div className="imgBox p-0 ">
                 <img src={event1} alt="event pic" className="w-100" />
               </div>
-              <div className="textBox col-8 text-left d-flex flex-column align-items-start ">
+              <img src={dashedline} className="dashed" />
+              <div className="textBox text-left d-flex flex-column align-items-start ">
                 <h5 className="mb-2">Lorem Ipsum is Dummy</h5>
                 <img src={star} alt="rating" />
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="d-flex justify-content-between col-12 p-0 ">
-                  <button className="">Check details</button>
+                <div className="d-flex justify-content-between align-items-center w-100 p-0">
+                  <button className="checkBtn">Check details</button>
                   <h2>$ 100</h2>
                 </div>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide> */}
           </Swiper>
+        </div>
+      </section>
+      <section className="checkSec sectionPadding border  border-warning  w-100 ">
+        <div className="container checkCont text-center d-flex flex-column align-items-center ">
+          <h2 className="mb-3 text-center">Lorem Ipsum is dummy text</h2>
+          <p className="text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <div className="row border w-100 border-info p-0 ">
+            <div className=" border border-warning d-flex align-items-center">
+              <input type="checkbox" name="check" id="check" className="" />
+              <input
+                type="text"
+                className="ml- p-3 position-relative "
+                placeholder="State"
+              />
+              <img
+                src={questiontag}
+                alt="question tag"
+                className=" position-absolute"
+              />
+            </div>
+            <div className=" border border-warning d-flex align-items-center">
+              <div className="checkcover">
+                <div className="checkback"></div>
+                <input type="checkbox" name="check" id="check" className="" />
+              </div>
+              <input
+                type="text"
+                className=" p-3 position-relative"
+                placeholder="Festival"
+              />
+              <img
+                src={questiontag}
+                alt="question tag"
+                className=" position-absolute"
+              />
+            </div>
+            <div className=" border border-warning d-flex align-items-center">
+              <input type="checkbox" name="check" id="check" className="" />
+              <input
+                type="text"
+                className=" ml-4 p-3 position-relative "
+                placeholder="lorem"
+              />
+              <img
+                src={questiontag}
+                alt="question tag"
+                className=" position-absolute"
+              />
+            </div>
+            <button className="border-0 searchBtn">Search</button>
+          </div>
         </div>
       </section>
 
@@ -756,7 +843,6 @@ function Home() {
         </div>
       </section>
       <Footer />
-
     </React.Fragment>
   );
 }

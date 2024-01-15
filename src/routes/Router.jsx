@@ -6,6 +6,7 @@ import Home from "../Home/Home";
 import DatabaseForm from "../BackendUi/Form/DatabaseForm";
 import Nav from "../layout/Nav/Nav";
 import PageNotFound from "../page-not-found/ErrorPage";
+import AdminPanel from "../BackendUi/adminpanel/AdminPanel";
 
 function Router() {
   return (
@@ -13,7 +14,8 @@ function Router() {
       <Routes>
         <Route path="/" element={<Main />}>
           <Route path="/" element={<Home />} />
-          <Route path="/admin" element={<DatabaseForm />} />
+          <Route path="/database" element={<DatabaseForm />} />
+          <Route path="/adminpanel" element={<AdminPanel />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

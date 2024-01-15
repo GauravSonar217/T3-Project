@@ -13,8 +13,9 @@ function DatabaseForm() {
     const container = document.createElement("div");
 
     node.type = inputType;
-    node.className = "new p-2 rounded w-100";
+    node.className = "new p-3 rounded w-100";
     container.className = "myCont w-100";
+    para.className = "p-2 border";
     para.textContent = "x";
 
     container.appendChild(node);
@@ -43,9 +44,9 @@ function DatabaseForm() {
     <React.Fragment>
       <section className="formSec w-100 d-flex justify-content-center align-items-start">
         <div className="container text-center w-100 h-100 pt-5  ">
-          <h2 className="mb-5">Sahyadri Trek Guide Database Form</h2>
+          <h2 className="mb-5">Trek Guide Database Form</h2>
           <form action="" className="w-100 p-0" onSubmit={handleForm}>
-            <div className="row m-0 mb-4 d-flex flex-lg-nowrap ">
+            <div className="row m-0 mb-5 d-flex flex-lg-nowrap ">
               <div className="col-lg-4 form-group d-flex flex-column align-items-start">
                 <label htmlFor="" className="mb-1">
                   Location Name:
@@ -53,7 +54,7 @@ function DatabaseForm() {
                 <input
                   type="text"
                   name="name"
-                  className="w-100 rounded border p-2"
+                  className="w-100 rounded border p-3"
                 />
               </div>
               <div className="col-lg-4 form-group d-flex flex-column align-items-start">
@@ -63,7 +64,7 @@ function DatabaseForm() {
                 <input
                   type="text"
                   name="name"
-                  className="w-100 rounded border p-2 "
+                  className="w-100 rounded border p-3"
                 />
               </div>
               <div className="col-lg-4 form-group d-flex flex-column align-items-start">
@@ -73,13 +74,13 @@ function DatabaseForm() {
                 <input
                   type="text"
                   name="name"
-                  className="w-100 rounded border p-2"
+                  className="w-100 rounded border p-3"
                 />
               </div>
             </div>
             <div className=" mb-5 d-flex flex-column align-items-start ">
               <h6>Overview:</h6>
-              <div className="w-100 boxBorder rounded paddingZero p-4 ">
+              <div className="w-100 boxBorder rounded paddingZero p-4 mb-4 ">
                 <div className="innerCont">
                   <div className="row mb-3 d-flex flex-lg-nowrap ">
                     <div className="col-lg-3 col-md-6 form-group d-flex flex-column align-items-start">
@@ -89,7 +90,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-3 col-md-6 form-group  d-flex flex-column align-items-start">
@@ -99,7 +100,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-3 col-md-6 form-group d-flex flex-column align-items-start">
@@ -109,7 +110,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-3 col-md-6 form-group d-flex flex-column align-items-start">
@@ -119,7 +120,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                   </div>
@@ -131,7 +132,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-3 col-md-6 form-group d-flex flex-column align-items-start">
@@ -141,7 +142,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2 "
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-3 col-md-6 form-group d-flex flex-column align-items-start">
@@ -150,7 +151,7 @@ function DatabaseForm() {
                       </label>
                       <select
                         name="duration"
-                        className="w-100 rounded border p-2 "
+                        className="w-100 rounded border p-3"
                       >
                         <optgroup>
                           <option value="">1 day</option>
@@ -171,11 +172,12 @@ function DatabaseForm() {
                           <input
                             type="text"
                             name="name"
-                            className="rounded border w-100  p-2 mr-3"
+                            className="rounded border w-100  p-3 mr-3"
                           />
                         </div>
-                        <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterOne">
+                        <div className="rounded d-flex flex-column justify-content-between counter counterOne">
                           <h5
+                            className="p-3"
                             onClick={() =>
                               addTask("text", "inputTextOne", "counterOne")
                             }
@@ -194,21 +196,21 @@ function DatabaseForm() {
                           <p>Easy:</p>
                           <input
                             type="text"
-                            className="rounded green col-8 p-2 "
+                            className="rounded green col-8 p-3"
                           />
                         </div>
                         <div className="mb-3 d-flex justify-content-between align-items-center">
                           <p className="mr-3">Moderate:</p>
                           <input
                             type="text"
-                            className="rounded yellow col-8 p-2"
+                            className="rounded yellow col-8 p-3"
                           />
                         </div>
                         <div className="d-flex justify-content-between align-items-center">
                           <p>Difficult:</p>
                           <input
                             type="text"
-                            className="rounded red col-8  p-2"
+                            className="rounded red col-8  p-3"
                           />
                         </div>
                       </div>
@@ -223,7 +225,7 @@ function DatabaseForm() {
             </div>
             <div className=" mb-5 d-flex flex-column align-items-start ">
               <h6>Attractions Points:</h6>
-              <div className="w-100 boxBorder paddingZero rounded p-4 ">
+              <div className="w-100 boxBorder paddingZero rounded p-4 mb-4 ">
                 <div className="innerCont ">
                   <div className="row d-flex flex-lg-nowrap align-items-start  ">
                     <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
@@ -231,7 +233,7 @@ function DatabaseForm() {
                       <input
                         type="file"
                         name="name"
-                        className="w-100 rounded border p-2 file"
+                        className="w-100 rounded border p-3 file"
                       />
                     </div>
                     <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
@@ -241,7 +243,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-6 col-md-12 form-group d-flex flex-column align-items-start">
@@ -253,11 +255,12 @@ function DatabaseForm() {
                           <input
                             type="text"
                             name="name"
-                            className="w-100 rounded border p-2 mr-3"
+                            className="w-100 rounded border p-3 mr-3"
                           />
                         </div>
-                        <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterTwo">
+                        <div className="rounded d-flex flex-column justify-content-between counter counterTwo">
                           <h5
+                            className="p-3"
                             onClick={() =>
                               addTask("text", "inputTextTwo", "counterTwo")
                             }
@@ -273,17 +276,17 @@ function DatabaseForm() {
             </div>
             <div className=" mb-5 d-flex flex-column align-items-start ">
               <h6>Insightful information:</h6>
-              <div className="w-100 boxBorder paddingZero rounded  p-5">
+              <div className="w-100 boxBorder paddingZero rounded  p-5 mb-4">
                 <div className="innerCont ">
                   <div className="row mb-5 d-flex flex-column justify-content-center ">
-                    <h3 className="mb-4">Foods</h3>
+                    <h3 className="mb-5">Foods</h3>
                     <div className="d-flex flex-lg-nowrap flex-wrap  align-items-start ">
                       <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
                         <label className="mb-1 disable">.</label>
                         <input
                           type="file"
                           name="name"
-                          className="w-100 rounded border p-2 file"
+                          className="w-100 rounded border p-3 file"
                         />
                       </div>
                       <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
@@ -293,7 +296,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                       <div className="col-lg-6 col-md-12 form-group d-flex flex-column align-items-start">
@@ -305,11 +308,12 @@ function DatabaseForm() {
                             <input
                               type="text"
                               name="name"
-                              className="w-100 rounded border p-2 mr-3"
+                              className="w-100 rounded border p-3 mr-3"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterThree">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterThree">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask(
                                   "text",
@@ -326,14 +330,14 @@ function DatabaseForm() {
                     </div>
                   </div>
                   <div className="row mb-5 d-flex flex-column justify-content-center ">
-                    <h3 className="mb-4">Drinking water</h3>
+                    <h3 className="mb-5">Drinking water</h3>
                     <div className="d-flex flex-lg-nowrap flex-wrap  align-items-start">
                       <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
                         <label className="mb-1 disable">.</label>
                         <input
                           type="file"
                           name="name"
-                          className="w-100 rounded border p-2 file"
+                          className="w-100 rounded border p-3 file"
                         />
                       </div>
                       <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
@@ -343,7 +347,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                       <div className="col-lg-6 col-md-12 form-group d-flex flex-column align-items-start">
@@ -355,11 +359,12 @@ function DatabaseForm() {
                             <input
                               type="text"
                               name="name"
-                              className="w-100 rounded border p-2 mr-3"
+                              className="w-100 rounded border p-3 mr-3"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterFour">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterFour">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask("text", "inputTextFour", "counterFour")
                               }
@@ -372,14 +377,14 @@ function DatabaseForm() {
                     </div>
                   </div>
                   <div className="row mb-5 d-flex flex-column justify-content-center ">
-                    <h3 className="mb-4">Accommodation</h3>
+                    <h3 className="mb-5">Accommodation</h3>
                     <div className="d-flex flex-lg-nowrap flex-wrap align-items-start">
                       <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
                         <label className="mb-1 disable">.</label>
                         <input
                           type="file"
                           name="name"
-                          className="w-100 rounded border p-2 file"
+                          className="w-100 rounded border p-3 file"
                         />
                       </div>
                       <div className="col-lg-3 col-md-12 form-group d-flex flex-column align-items-start">
@@ -389,7 +394,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                       <div className="col-lg-6 col-md-12 form-group d-flex flex-column align-items-start">
@@ -401,11 +406,12 @@ function DatabaseForm() {
                             <input
                               type="text"
                               name="name"
-                              className="w-100 rounded border p-2 mr-3"
+                              className="w-100 rounded border p-3 mr-3"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterFive">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterFive">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask("text", "inputTextFive", "counterFive")
                               }
@@ -418,7 +424,7 @@ function DatabaseForm() {
                     </div>
                   </div>
                   <div className="row mb-5 d-flex flex-column justify-content-center ">
-                    <h3 className="mb-4">Weather</h3>
+                    <h3 className="mb-5">Weather</h3>
                     <div className="d-flex flex-lg-nowrap flex-wrap  justify-content-center">
                       <div className="col-lg-3 form-group d-flex flex-column align-items-start">
                         <label htmlFor="" className="mb-1">
@@ -427,7 +433,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                       <div className="col-lg-3 form-group d-flex flex-column align-items-start">
@@ -437,7 +443,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                       <div className="col-lg-3 form-group d-flex flex-column align-items-start">
@@ -447,7 +453,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                     </div>
@@ -455,17 +461,18 @@ function DatabaseForm() {
                   <div className="row d-flex flex-column justify-content-center ">
                     <div className="d-flex flex-lg-nowrap flex-wrap  justify-content-center">
                       <div className="col-lg-4 mb-md-4 form-group d-flex flex-column align-items-start">
-                        <h3>Photos</h3>
+                        <h3 className="mb-3">Photos</h3>
                         <div className="d-flex w-100 flex-lg-nowrap justify-content-start ">
                           <div className="d-flex w-100 mr-3  flex-column inputFileCont">
                             <input
                               type="file"
                               name="name"
-                              className="w-100 rounded border p-2 file"
+                              className="w-100 rounded border p-3 file"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterSix">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterSix">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask("file", "inputFileCont", "counterSix")
                               }
@@ -476,17 +483,18 @@ function DatabaseForm() {
                         </div>
                       </div>
                       <div className="col-lg-4 mb-md-4 form-group d-flex flex-column align-items-start">
-                        <h3>Mobile Networks</h3>
+                        <h3 className="mb-3">Mobile Networks</h3>
                         <div className="d-flex w-100  flex-lg-nowrap justify-content-start ">
                           <div className="inputTextSix w-100 mr-3 d-flex flex-column">
                             <input
                               type="text"
                               name="name"
-                              className="w-100 mr-3 rounded border p-2"
+                              className="w-100 mr-3 rounded border p-3"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterSeven">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterSeven">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask("text", "inputTextSix", "counterSeven")
                               }
@@ -497,17 +505,18 @@ function DatabaseForm() {
                         </div>
                       </div>
                       <div className="col-lg-4 form-group d-flex flex-column align-items-start">
-                        <h3>Contacts</h3>
+                        <h3 className="mb-3">Contacts</h3>
                         <div className="d-flex w-100  flex-lg-nowrap justify-content-start ">
                           <div className="inputTextSeven w-100 mr-3 d-flex flex-column">
                             <input
                               type="text"
                               name="name"
-                              className="w-100 mr-3 rounded border p-2"
+                              className="w-100 mr-3 rounded border p-3"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterEight">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterEight">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask(
                                   "text",
@@ -528,7 +537,7 @@ function DatabaseForm() {
             </div>
             <div className="mb-5 d-flex flex-column align-items-start ">
               <h6>How to Reach:</h6>
-              <div className="w-100 boxBorder paddingZero rounded p-5">
+              <div className="w-100 boxBorder paddingZero rounded p-5 mb-4">
                 <div className="innerCont ">
                   <div className="row mb-5 d-flex flex-lg-nowrap justify-content-start">
                     <div className="col-lg-3 form-group d-flex flex-column align-items-start">
@@ -538,7 +547,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-3 form-group d-flex flex-column align-items-start">
@@ -548,7 +557,7 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                     <div className="col-lg-3 form-group d-flex flex-column align-items-start">
@@ -558,12 +567,12 @@ function DatabaseForm() {
                       <input
                         type="text"
                         name="name"
-                        className="w-100 rounded border p-2"
+                        className="w-100 rounded border p-3"
                       />
                     </div>
                   </div>
                   <div className="row d-flex flex-column flex-lg-nowrap align-items-start">
-                    <h4 className="mb-3">How to reach base:</h4>
+                    <h4 className="mb-3 ml-3">How to reach base:</h4>
                     <div className="w-100 d-flex flex-lg-nowrap flex-wrap  justify-content-center">
                       <div className="col-lg-3 form-group d-flex flex-column align-items-start">
                         <label htmlFor="" className="mb-1">
@@ -573,10 +582,10 @@ function DatabaseForm() {
                           <input
                             type="text"
                             name="name"
-                            className="w-100 mr-3 rounded border p-2"
+                            className="w-100 mr-3 rounded border p-3"
                             placeholder="Enter Route"
                           />
-                          <div className="p-2 rounded border border-2 counter">
+                          <div className="p-3 rounded border bg-white  border-black  border-2 counter">
                             <FiPlus />
                           </div>
                         </div>
@@ -584,10 +593,10 @@ function DatabaseForm() {
                           <input
                             type="text"
                             name="name"
-                            className="w-100 mr-3 rounded border p-2"
+                            className="w-100 mr-3 rounded border p-3"
                             placeholder="Recommendation"
                           />
-                          <div className="p-2 rounded border border-2 counter">
+                          <div className="p-3 bg-white  rounded border border-2 counter">
                             <FiPlus />
                           </div>
                         </div>
@@ -595,10 +604,10 @@ function DatabaseForm() {
                           <input
                             type="text"
                             name="name"
-                            className="w-100 mr-3 rounded border p-2"
+                            className="w-100 mr-3 rounded border p-3"
                             placeholder="Parking"
                           />
-                          <div className="p-2 rounded border border-2 counter">
+                          <div className="p-3 bg-white  rounded border border-2 counter">
                             <FiPlus />
                           </div>
                         </div>
@@ -606,10 +615,10 @@ function DatabaseForm() {
                           <input
                             type="text"
                             name="name"
-                            className="w-100 mr-3 rounded border p-2"
+                            className="w-100 mr-3 rounded border p-3"
                             placeholder="Note"
                           />
-                          <div className="p-2 rounded border border-2 counter">
+                          <div className="p-3 bg-white  rounded border border-2 counter">
                             <FiPlus />
                           </div>
                         </div>
@@ -621,7 +630,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                       <div className="col-lg-3 form-group d-flex flex-column align-items-start">
@@ -631,7 +640,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                       <div className="col-lg-3 form-group d-flex flex-column align-items-start">
@@ -641,7 +650,7 @@ function DatabaseForm() {
                         <input
                           type="text"
                           name="name"
-                          className="w-100 rounded border p-2"
+                          className="w-100 rounded border p-3"
                         />
                       </div>
                     </div>
@@ -664,12 +673,13 @@ function DatabaseForm() {
                             <input
                               type="text"
                               name="name"
-                              className="w-100 mr-3 rounded border p-2"
+                              className="w-100 mr-3 rounded border p-3"
                               placeholder="Enter Detail"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterNine">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterNine">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask("text", "inputTextEight", "counterNine")
                               }
@@ -688,12 +698,13 @@ function DatabaseForm() {
                             <input
                               type="text"
                               name="name"
-                              className="w-100 mr-3 rounded border p-2"
+                              className="w-100 mr-3 rounded border p-3"
                               placeholder="Enter Detail"
                             />
                           </div>
-                          <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterTen">
+                          <div className="rounded d-flex flex-column justify-content-between counter counterTen">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask("text", "inputTextNine", "counterTen")
                               }
@@ -712,12 +723,13 @@ function DatabaseForm() {
                             <input
                               type="text"
                               name="name"
-                              className="w-100 mr-3 rounded border p-2"
+                              className="w-100 mr-3 rounded border p-3"
                               placeholder="Enter Detail"
                             />
                           </div>
                           <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterEleven">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask("text", "inputTextTen", "counterEleven")
                               }
@@ -736,12 +748,13 @@ function DatabaseForm() {
                             <input
                               type="text"
                               name="name"
-                              className="w-100 mr-3 rounded border p-2"
+                              className="w-100 mr-3 rounded border p-3"
                               placeholder="Enter Detail"
                             />
                           </div>
                           <div className="rounded d-flex flex-column justify-content-between  border border-2 counter counterTwelve">
                             <h5
+                              className="p-3"
                               onClick={() =>
                                 addTask(
                                   "text",
