@@ -1,0 +1,211 @@
+[
+  {
+    "id": 0,
+    "sectionName": "trek",
+    "reviewCards": [
+      {
+        "id": 1,
+        "userName": "Yashwant Gosavi",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "3.5",
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 2,
+        "userName": "Alice Smith",
+        "userJobRole": "Nature Lover",
+        "reviewHead": "Scenic Beauty Everywhere",
+        "rating": "4",
+        "reviewDesc": "The trek was filled with scenic beauty at every turn. The guides were knowledgeable, and the overall experience was rejuvenating. Can't wait to go on another trek!",
+        "reviewDate": "14-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 3,
+        "userName": "Bob Johnson",
+        "userJobRole": "Outdoor Photographer",
+        "reviewHead": "Photographer's Paradise",
+        "rating": "4.5",
+        "reviewDesc": "As a photographer, I found the trek to be a paradise for capturing stunning shots. The landscapes and natural beauty provided endless opportunities for great photographs.",
+        "reviewDate": "13-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 4,
+        "userName": "John Doe",
+        "userJobRole": "Adventure Enthusiast",
+        "reviewHead": "Amazing Trek Experience",
+        "rating": "5",
+        "reviewDesc": "I recently went on a trek and it was an amazing experience. The scenery was breathtaking, and the trekking route was well-planned. I would highly recommend it!",
+        "reviewDate": "15-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 5,
+        "userName": "Yashwant Gosavi",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "3",
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 6,
+        "userName": "Yashwant Gosavi",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "4.2",
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "sectionName": "tour",
+    "reviewCards": [
+      {
+        "id": 1,
+        "userName": "Deepak Bind",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "4.5",
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 2,
+        "userName": "Eva Brown",
+        "userJobRole": "Travel Blogger",
+        "reviewHead": "Incredible Tour Experience",
+        "rating": "4.5",
+
+        "reviewDesc": "My recent tour was absolutely incredible! The destinations were well-chosen, and the entire journey was smooth. I documented the entire experience on my travel blog.",
+        "reviewDate": "16-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 3,
+        "userName": "David White",
+        "userJobRole": "Adventurous Explorer",
+        "reviewHead": "Adventurous Journey",
+        "rating": "4",
+
+        "reviewDesc": "The tour was full of adventurous activities and cultural experiences. From exploring ancient ruins to trying local cuisines, every moment was unforgettable.",
+        "reviewDate": "15-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 4,
+        "userName": "Grace Miller",
+        "userJobRole": "History Enthusiast",
+        "reviewHead": "Historical Tour Delight",
+        "rating": "5",
+
+        "reviewDesc": "Being a history enthusiast, I thoroughly enjoyed the historical tour. The guides provided fascinating insights, and the entire itinerary was well-planned.",
+        "reviewDate": "14-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 5,
+        "userName": "Yashwant Gosavi",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "3",
+
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 6,
+        "userName": "Yashwant Gosavi",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "4.1",
+
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "travel",
+    "reviewCards": [
+      {
+        "id": 1,
+        "userName": "Gaurav Sonar",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "2.5",
+
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 2,
+        "userName": "Mark Taylor",
+        "userJobRole": "Travel Enthusiast",
+        "reviewHead": "Unforgettable Travel Journey",
+        "rating": "3.5",
+
+        "reviewDesc": "My travel journey was truly unforgettable. From exploring vibrant markets to meeting friendly locals, every moment added to the joy of traveling.",
+        "reviewDate": "17-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 3,
+        "userName": "Sophie Clark",
+        "userJobRole": "Solo Traveler",
+        "reviewHead": "Solo Adventure Bliss",
+        "rating": "4.5",
+
+        "reviewDesc": "Embarking on a solo travel adventure was blissful. It allowed me to discover new places, meet interesting people, and learn more about myself.",
+        "reviewDate": "16-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 4,
+        "userName": "Mike Turner",
+        "userJobRole": "Travel Blogger",
+        "reviewHead": "Captivating Travel Stories",
+        "rating": "5",
+
+        "reviewDesc": "My travel journey was filled with captivating stories. Each destination had its unique charm, and I shared my experiences with my blog readers.",
+        "reviewDate": "15-Jan-2024",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 5,
+        "userName": "Yashwant Gosavi",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "3",
+
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      },
+      {
+        "id": 6,
+        "userName": "Yashwant Gosavi",
+        "userJobRole": "Web Design and Developer",
+        "reviewHead": "Lorem Ipsum",
+        "rating": "4",
+
+        "reviewDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is",
+        "reviewDate": "1-Dec-2023",
+        "userProfile": "../media/Avatar.png"
+      }
+    ]
+  }
+]

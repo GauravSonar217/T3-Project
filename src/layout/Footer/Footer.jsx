@@ -91,7 +91,8 @@ function Footer() {
             <div className="conditionBox ">
               <p className="mb-3">Terms of service | Privacy Policy </p>
               <h6>
-                © All rights reserved by <a href="#">trektourtravel.com</a>{" "}
+                © All rights reserved by&nbsp;
+                <a href="trektourtravel.com">trektourtravel.com</a>
               </h6>
             </div>
             <div className="socialCont">

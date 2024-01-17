@@ -1,3 +1,158 @@
+// header Slider Style
+
+.headerSlider {
+  height: 80vh;
+  padding: 0 2rem;
+  position: relative;
+  margin-bottom: 23rem;
+  .carousel {
+    border-radius: 4.5rem;
+    .carousel-inner {
+      border-radius: 4.5rem;
+      .carousel-item {
+        &:nth-child(1) {
+          background: linear-gradient(141deg, #376ff0 7.74%, #003ea6 86.57%);
+        }
+        &:nth-child(2) {
+          background: linear-gradient(141deg, #f42424 7.74%, #f58585 86.57%);
+        }
+        &:nth-child(3) {
+          background: linear-gradient(141deg, #f037c8 7.74%, #f91702 86.57%);
+        }
+      }
+    }
+  }
+  .headerDataCont {
+    position: absolute;
+    height: 28vh;
+    bottom: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4.5rem;
+    background-color: $white;
+
+    .guideBtn {
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: $white;
+      font-family: $DM-Text;
+      background-color: $dark-green;
+      border-radius: 4rem;
+      padding: 1rem 5rem;
+      border-radius: 41px;
+      box-shadow: -1px 4px 8.8px 1px rgba(0, 23, 74, 0.34);
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .btnCont {
+      a {
+        border-radius: 0.8rem;
+        border: 1px solid #d0d5dd;
+        background-color: $white;
+        padding: 1.2rem 3.5rem;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $darkgrey;
+      }
+    }
+    .headerSearchBar {
+      width: 90%;
+      border-radius: 4rem;
+      border: 2px solid $grey2;
+      input {
+        outline: none;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.counterSec {
+  height: 20vh;
+  background-color: $lightgrey;
+  .counterCont {
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: $DM-Text;
+      color: $dark-green;
+    }
+    .counterBox {
+      .countImgBox {
+        img {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+      h3 {
+        text-decoration: none;
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: $materialTheme;
+      }
+      h5 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $materialTheme;
+      }
+    }
+  }
+}
+
+// Location Section Style
+
+.locationSec {
+  .locationCont {
+    .bookmarkLinksCont {
+      padding: 4rem 0;
+      gap: 1rem;
+      a {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $materialTheme;
+        padding: 1.6rem 2.5rem;
+        border-radius: 4rem;
+        background-color: $materialGrey;
+      }
+    }
+    .searchSec {
+      padding-top: 8rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        color: $dark-green;
+      }
+      .searchAreaBox {
+        padding: 1.2rem 2.4rem;
+        border-radius: 1.2rem;
+        cursor: pointer;
+        h4 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: $dark-green;
+        }
+        h5 {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $darkgrey;
+        }
+      }
+    }
+  }
+}
+
+.carouselSec {
+  .carouselCont {
+    height: 90vh;
+    position: relative;
+  }
+}
+
 // News letter style
 .newsletterSec {
   padding: 8rem 1rem;
@@ -15,6 +170,7 @@
         font-weight: 400;
         font-family: $DM-Text;
         color: $white;
+        text-decoration: none;
       }
       p {
         margin-bottom: 5rem;
@@ -46,15 +202,14 @@
 // login sec style
 
 .loginSec {
-  padding: 2rem;
-  // height: 100vh;
+  height: 100vh;
   .loginFormCont {
+    width: 45%;
     padding: 0;
-    padding-top: 14rem;
     .formTextContainer {
-      width: 70%;
+      width: 65%;
       h1 {
-        font-size: 4.8rem;
+        font-size: 4.5rem;
         font-weight: 700;
         color: $dark-green;
         margin-bottom: 4rem;
@@ -159,6 +314,7 @@
         font-size: 2.4rem;
         font-weight: 400;
         color: $dark-green;
+        text-decoration: none;
       }
       .socialIconCont {
         a {
@@ -173,6 +329,7 @@
     }
   }
   .loginSliderCont {
+    width: 55%;
     .skipBtn {
       padding: 1.8rem 3.2rem;
       border-radius: 6rem;
@@ -181,19 +338,23 @@
       color: $dark-green;
       background-color: $white;
       z-index: 10;
-      top: 2.5rem;
-      right: 2rem;
+      top: 4rem;
+      right: 4rem;
       img {
         width: 2rem;
         height: 2rem;
       }
     }
     .carousel {
+      padding: 2rem;
+      .carousel-inner {
+        border-radius: 5rem;
+      }
       .carousel-item {
         img {
           width: 100%;
+          height: 100%;
           object-fit: cover;
-          border-radius: 5rem;
         }
       }
       .carousel-control-prev {
@@ -201,9 +362,8 @@
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
-        // position: absolute;
-        top: 92%;
-        left: 45%;
+        top: 90%;
+        left: 42%;
         padding: 1.5rem;
         opacity: 1;
       }
@@ -213,8 +373,8 @@
         height: 5rem;
         border-radius: 50%;
         position: absolute;
-        top: 92%;
-        right: 45%;
+        top: 90%;
+        right: 42%;
         padding: 1.5rem;
         opacity: 1;
       }
@@ -232,6 +392,7 @@
       font-weight: 400;
       font-family: $DM-Text;
       color: $dark-green;
+      text-decoration: none;
     }
     p {
       width: 80%;
@@ -393,6 +554,7 @@
     font-family: $DM-Text;
     color: $dark-green;
     margin-bottom: 6rem;
+    text-decoration: none;
   }
   .blogCont {
     margin-bottom: 5rem !important;
@@ -435,18 +597,18 @@
   padding-left: 1.6rem;
   padding-right: 1.6rem;
   .carousel {
-    border: 1px solid red;
+    // border: 1px solid red;
     .carousel-inner {
       .carousel-item {
         height: calc(85vh - 7rem);
-        border: 1px solid blue;
+        // border: 1px solid blue;
         img {
           height: 100%;
           object-fit: cover;
           border-radius: 5rem;
         }
         .slideTextBox {
-          border: 1px solid red;
+          // border: 1px solid red;
           color: $white;
           position: absolute;
           top: 20rem;
@@ -456,6 +618,7 @@
           h2 {
             font-size: 4.8rem;
             color: $white;
+            text-decoration: none;
           }
           p {
             color: $white;
@@ -531,6 +694,11 @@
 
       .swiper-wrapper {
         height: 22%;
+        cursor: grab;
+
+        &:active {
+          cursor: grabbing;
+        }
 
         .swiper-slide {
           text-align: center;
@@ -600,11 +768,167 @@
       .swiper-scrollbar {
         background-color: #eef8ff;
         .swiper-scrollbar-drag {
-          width: 10rem !important;
+          // width: 10rem !important;
           height: 0.85rem;
           border-radius: 23px;
           background: #b2e5ff;
           margin-top: -0.3rem;
+          cursor: grab;
+          &:active {
+            cursor: grabbing;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Rating Section Style
+
+.ratingSec {
+  .ratingWrapper {
+    h2 {
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: $DM-Text;
+      color: $dark-green;
+      text-decoration: none;
+    }
+    p {
+      width: 80%;
+      color: $darkgrey;
+      margin-bottom: 6rem;
+    }
+    .ratingCont {
+      .ratingBox {
+        border-radius: 3rem;
+        background-color: $white;
+        border: 1px solid $grey;
+
+        h1 {
+          font-size: 6rem;
+          font-weight: bold;
+          color: $darkgrey;
+          font-family: $kalam;
+        }
+        h3 {
+          font-size: 3rem;
+          font-weight: 500;
+          text-decoration: none;
+          color: $darkgrey;
+        }
+      }
+      .ratingSearchBar {
+        background-color: $white;
+        border-radius: 3rem;
+        border: 1px solid $grey;
+        img {
+          cursor: pointer;
+        }
+
+        input {
+          border-top-right-radius: 3rem;
+          border-bottom-right-radius: 3rem;
+          outline: none;
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      }
+      .ratingSlider {
+        height: 30vh;
+        background-color: $white;
+        border-radius: 3rem;
+        padding: 1rem;
+        .carousel {
+          border-radius: 3rem;
+          .carousel-indicators {
+            li {
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              background-color: transparent;
+              border: 1px solid $white;
+              &.active {
+                background-color: $white;
+              }
+            }
+          }
+          .carousel-inner {
+            border-radius: 3rem;
+            .carousel-item {
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+    .reviewBoxWrapper {
+      background-color: $white;
+      border-radius: 3rem;
+      border: 1px solid $grey;
+
+      .reviewBoxCont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        height: 52vh;
+        overflow-y: scroll;
+        .reviewBox {
+          border-radius: 1.5rem;
+          background-color: #f3f7fc;
+          .reviewHeader {
+            .textBox {
+              img {
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+              }
+              h3 {
+                font-size: 2.2rem;
+                font-weight: 500;
+                text-decoration: none;
+                color: $dark-green;
+              }
+              h5 {
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: $darkgrey;
+              }
+            }
+            h4 {
+              font-size: 1.4rem;
+              font-weight: 500;
+              color: $darkgrey;
+            }
+          }
+          h4 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $dark-green;
+          }
+          p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .reviewFooter {
+        height: 10vh;
+        background-color: #f3f7fc;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        .down {
+          border-radius: 50%;
+          background-color: $dark-green;
+          padding: 2rem;
+          cursor: pointer;
         }
       }
     }
@@ -632,21 +956,18 @@
       justify-content: space-between;
 
       .checkcover {
-        border: 1px solid red;
         padding: 0.5rem;
-        border-radius: 1rem;
         position: relative;
 
         .checkback {
           width: 100%;
           height: 100%;
           padding: 0.5rem;
-          border: 1px solid blue;
           position: absolute;
           top: 0;
           left: 0;
-          border-radius: 0.5rem;
-          background-color: blue;
+          border-radius: 1rem;
+          background-color: #7f56d9;
           z-index: -1;
           display: none;
         }
@@ -665,11 +986,6 @@
           justify-content: center;
           align-items: center;
 
-          &:checked + .checkback {
-            border-color: #7f56d9;
-            background-color: #000;
-            display: block;
-          }
           &:checked::before {
             content: "\2713";
             display: inline-block;
@@ -689,7 +1005,6 @@
         background-color: $white;
         font-size: 1.6rem;
         outline: none;
-        position: relative;
         margin-left: 1.5rem;
 
         &::placeholder {
@@ -725,6 +1040,7 @@
         font-weight: 400;
         font-family: $DM-Text;
         color: $white;
+        text-decoration: none;
       }
       p {
         color: $white;
@@ -751,6 +1067,7 @@
           font-weight: 400;
           font-family: $DM-Text;
           color: $dark-green;
+          text-decoration: none;
         }
         p {
           font-size: 1.4rem;

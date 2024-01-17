@@ -3,6 +3,7 @@ footer {
   color: $white;
   border-top-right-radius: 4rem;
   border-top-left-radius: 4rem;
+  margin-top: 10rem;
 
   #footer {
     .textCont {
@@ -21,6 +22,7 @@ footer {
           margin-bottom: 2rem;
           color: $white;
           font-family: $DM-Font;
+          text-decoration: none;
         }
         p {
           margin-bottom: 10rem;
@@ -29,6 +31,7 @@ footer {
         h4 {
           font-size: 2rem;
           font-weight: 500;
+          color: $white;
         }
       }
       .footerLinkWrapper {
@@ -38,6 +41,8 @@ footer {
             font-weight: 400;
             font-family: $DM-Text;
             margin-bottom: 3rem;
+            color: $white;
+            text-decoration: none;
           }
           .footerLinkBox {
             li {
@@ -71,6 +76,7 @@ footer {
         h6 {
           font-size: 1.6rem;
           font-weight: 500;
+          color: $white;
           a {
             color: $white;
             text-decoration: underline;

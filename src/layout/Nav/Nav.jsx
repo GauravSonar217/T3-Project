@@ -28,64 +28,6 @@ function Nav() {
 
   return (
     <React.Fragment>
-      {/* <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container" id="navbar">
-          <a className="navbar-brand" href="#">
-            <h1 className="d-flex align-items-center ">
-              <div className="blueDot mr-2"></div>T3
-            </h1>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav navLinkCont">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item ml-4">
-                <a className="nav-link" href="#">
-                  Take Guide
-                </a>
-              </li>
-              <li className="nav-item ml-4">
-                <a className="nav-link" href="#">
-                  Upcoming Events
-                </a>
-              </li>
-              <li className="nav-item ml-4">
-                <a className="nav-link" href="#">
-                  Join Community
-                </a>
-              </li>
-            </ul>
-            <div className="navBtnCont d-flex align-items-center">
-              <button id="languageBtn">
-                <img src={lang} alt="language icon" /> | EN
-              </button>
-              <button id="loginBtn" className="ml-3">
-                Login
-              </button>
-              <div className="humburger ml-5" id="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav> */}
-
       <nav className="w-100">
         <div
           className="container py-4 d-flex align-items-center justify-content-between "
@@ -96,7 +38,7 @@ function Nav() {
           </h1>
           <ul className="navLinkCont d-lg-flex">
             <li>
-              <HashLink className="active">Home</HashLink>
+              <HashLink className="active" to="/">Home</HashLink>
             </li>
             <li>
               <HashLink>Take Guide</HashLink>

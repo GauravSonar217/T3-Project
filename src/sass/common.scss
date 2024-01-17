@@ -22,7 +22,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto !important;
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 100%;
   padding: 0 1.6rem;
 }
@@ -46,6 +46,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 ul {

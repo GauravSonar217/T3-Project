@@ -227,7 +227,7 @@ function AdminPanel() {
                   <HashLink className="p-4">Index</HashLink>
                 </li>
               </ul>
-              <div className="d-flex justify-content-between align-items-center  ">
+              <div className="d-flex addNewBox justify-content-between align-items-center  ">
                 <img src={plus} />
                 <p className="m-0 ml-4">Add new to dashboard</p>
               </div>

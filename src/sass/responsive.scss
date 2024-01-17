@@ -1,4 +1,52 @@
 @media only screen and (min-width: 992px) and (max-width: 1280.98px) {
+  // Login Section Style
+
+  .loginSec {
+    .formTextContainer {
+      h1 {
+        font-size: 3.5rem !important;
+        margin-bottom: 3rem !important;
+      }
+      .formContainer {
+        .switchCont {
+          margin-bottom: 3rem !important;
+          p {
+            font-size: 1.8rem !important;
+          }
+        }
+        form {
+          margin-bottom: 3rem !important;
+          input {
+            font-size: 1.6rem !important;
+            padding: 1.8rem 2.5rem !important;
+            margin-bottom: 1.5rem !important;
+          }
+          button {
+            padding: 1.5rem 0 !important;
+            font-size: 1.8rem !important;
+            margin-top: 1.5rem !important;
+          }
+        }
+      }
+      p {
+        font-size: 1.6rem !important;
+        a {
+          font-size: 1.6rem !important;
+        }
+      }
+      h3 {
+        font-size: 2rem !important;
+      }
+      .socialIconCont {
+        a {
+          width: 6rem !important;
+          height: 6rem !important;
+          padding: 2rem !important;
+        }
+      }
+    }
+  }
+
   // event slider style
 
   .eventSliderSec {
@@ -41,6 +89,55 @@
   }
 }
 @media only screen and (min-width: 767.98px) and (max-width: 991px) {
+  // login sec style
+
+  .loginSec {
+    height: auto;
+    padding: 10rem 0;
+    row-gap: 6rem;
+    .loginFormCont {
+      width: 100%;
+      padding: 0;
+      .formTextContainer {
+        width: 65%;
+        h1 {
+          font-size: 4.5rem;
+          margin-bottom: 3.5rem;
+        }
+        .formContainer {
+          .switchCont {
+            margin-bottom: 4rem;
+            p {
+              font-size: 2rem;
+            }
+          }
+          form {
+            margin-bottom: 4rem;
+            input {
+              font-size: 1.8rem;
+              padding: 1.5rem 3rem;
+            }
+          }
+        }
+      }
+    }
+    .loginSliderCont {
+      width: 100%;
+      height: 70vh;
+      .carousel {
+        .carousel-control-prev {
+          top: 85%;
+          left: 42%;
+          padding: 1.5rem;
+          opacity: 1;
+        }
+        .carousel-control-next {
+          top: 85%;
+        }
+      }
+    }
+  }
+
   // event slider style
 
   .eventSliderSec {
@@ -254,6 +351,7 @@
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+  // event section style
   .eventSliderSec {
     .eventSliderCont {
       .swiper {
@@ -278,6 +376,105 @@
 }
 
 @media only screen and (max-width: 576px) {
+  // login sec style
+
+  .loginSec {
+    height: auto;
+    flex-direction: column;
+    padding: 8rem 0;
+    row-gap: 5rem;
+    .loginFormCont {
+      width: 100%;
+      padding: 0;
+      .formTextContainer {
+        width: 85%;
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 2.5rem;
+        }
+        .formContainer {
+          .switchCont {
+            margin-bottom: 3rem;
+            p {
+              font-size: 1.8rem;
+            }
+            .switch {
+              font-size: 14px;
+              width: 3.5em;
+              height: 1.8em;
+              margin: 0 3.5rem;
+            }
+            .slider:before {
+              height: 1.3em;
+              width: 1.3em;
+            }
+            .switch input:checked + .slider:before {
+              transform: translateX(1.6em);
+            }
+          }
+          form {
+            margin-bottom: 3rem;
+            input {
+              font-size: 1.5rem;
+              padding: 1.5rem 3rem;
+            }
+            button {
+              padding: 1.4rem 0;
+              font-size: 1.6rem;
+              font-weight: 600;
+              margin-top: 1rem;
+            }
+          }
+        }
+        p {
+          font-size: 1.5rem;
+          a {
+            font-size: 1.5rem;
+          }
+        }
+        h3 {
+          font-size: 2rem;
+        }
+        .socialIconCont {
+          a {
+            width: 5.5rem;
+            height: 5.5rem;
+            padding: 2rem;
+            border-radius: 50%;
+            img {
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .loginSliderCont {
+      width: 100%;
+      height: 50vh;
+      .carousel {
+        .carousel-inner {
+          border-radius: 3rem;
+        }
+        .carousel-control-prev {
+          width: 4rem;
+          height: 4rem;
+          top: 78%;
+          left: 35%;
+          padding: 1.2rem;
+        }
+        .carousel-control-next {
+          background-color: $grey;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          top: 78%;
+          right: 35%;
+          padding: 1.2rem;
+        }
+      }
+    }
+  }
+
   // event slider style
 
   .eventSliderSec {
@@ -338,7 +535,6 @@
         }
         .swiper-scrollbar {
           .swiper-scrollbar-drag {
-            width: 6.5rem !important;
             height: 0.65rem;
             top: 0.1rem;
           }
@@ -689,6 +885,98 @@
 }
 
 @media only screen and (max-width: 320px) {
+  // login sec style
+
+  .loginSec {
+    .loginFormCont {
+      .formTextContainer {
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 2.5rem;
+        }
+        .formContainer {
+          .switchCont {
+            margin-bottom: 2rem;
+            p {
+              font-size: 1.5rem;
+            }
+            .switch {
+              font-size: 12px;
+              width: 3em;
+              height: 1.6em;
+              margin: 0 2.5rem;
+            }
+            .slider:before {
+              height: 1.2em;
+              width: 1.2em;
+              bottom: 3px;
+            }
+            .switch input:checked + .slider:before {
+              transform: translateX(1.3em);
+            }
+          }
+          form {
+            margin-bottom: 2rem;
+            input {
+              font-size: 1.3rem;
+              padding: 1.2rem 2rem;
+              margin-bottom: 1.5rem;
+            }
+            button {
+              padding: 1rem 0;
+              font-size: 1.4rem;
+              font-weight: 600;
+              margin-top: 1rem;
+            }
+          }
+        }
+        p {
+          font-size: 1.3rem;
+          a {
+            font-size: 1.3rem;
+          }
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+        .socialIconCont {
+          a {
+            width: 4.5rem;
+            height: 4.5rem;
+            padding: 1rem;
+            img {
+              width: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .loginSliderCont {
+      width: 100%;
+      height: 55vh;
+      
+      .carousel {
+        .carousel-inner {
+          border-radius: 3rem;
+        }
+        .carousel-control-prev {
+          width: 3.5rem;
+          height: 3.5rem;
+          top: 75%;
+          padding: 1rem;
+        }
+        .carousel-control-next {
+          background-color: $grey;
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+          top: 75%;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
   // event slider style
 
   .eventSliderSec {
@@ -750,7 +1038,6 @@
         }
         .swiper-scrollbar {
           .swiper-scrollbar-drag {
-            width: 6rem !important;
             height: 0.5rem;
             top: 0.2rem;
           }

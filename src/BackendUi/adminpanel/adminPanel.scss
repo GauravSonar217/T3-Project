@@ -30,6 +30,9 @@
         &.active {
           color: $purple;
         }
+        &:hover {
+          color: $purple;
+        }
       }
     }
     .adminSearchBox {
@@ -108,6 +111,7 @@
           border-radius: 2rem;
           padding: 2.5rem 1.5rem 1.5rem 1.5rem;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          cursor: pointer;
 
           h6 {
             font-size: 1.2rem;
@@ -130,6 +134,7 @@
             background-color: $white;
             padding: 2.5rem 1rem;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            cursor: pointer;
 
             .numBox {
               width: 2rem;
@@ -167,6 +172,7 @@
           padding: 2.5rem 1.5rem 1.5rem 1.5rem;
           background-color: $white;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          cursor: pointer;
 
           .updateHeader {
             h6 {
@@ -217,10 +223,16 @@
             font-size: 1.3rem;
             font-weight: 700;
             color: $darkgrey;
+            &:hover {
+              color: $purple;
+            }
             &.active {
               color: $purple;
             }
           }
+        }
+        .addNewBox {
+          cursor: pointer;
         }
       }
       .dashboardCont {
@@ -250,6 +262,7 @@
                   border-radius: 1rem;
                   padding: 4.2rem;
                   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                  cursor: pointer;
                   h2 {
                     font-size: 3rem;
                     font-weight: 500;
@@ -275,6 +288,7 @@
                 }
                 .featureBoxCont {
                   .featureBox {
+                    cursor: pointer;
                     .featureIconCont {
                       padding: 1rem;
                       border-radius: 50%;
@@ -347,6 +361,7 @@
             .financialsCont {
               .financialChartCont {
                 border-radius: 1rem;
+                cursor: pointer;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
                 .financialHeader {
                   h6 {
@@ -358,6 +373,7 @@
               .financialDetailCont {
                 .financialBox {
                   border-radius: 1rem;
+                  cursor: pointer;
                   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
                   .financialBoxHeader {
                     h6 {
@@ -404,6 +420,19 @@
               position: relative;
               color: $darkgrey;
               cursor: pointer;
+              &:hover {
+                color: $orange;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  bottom: -1px;
+                  width: 85%;
+                  height: 2px;
+                  background-color: $orange;
+                  transform: translateX(-50%);
+                }
+              }
 
               &.active {
                 color: $orange;
